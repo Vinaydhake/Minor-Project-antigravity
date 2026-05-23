@@ -1,0 +1,14 @@
+{
+  "name": "earthpulse",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm run --parallel dev:backend dev:frontend",
+    "dev:backend": "pnpm --filter @earthpulse/backend dev",
+    "dev:frontend": "pnpm --filter @earthpulse/frontend dev",
+    "build": "pnpm -r build",
+    "type-check": "pnpm -r exec tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
